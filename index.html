@@ -110,17 +110,34 @@
         <div class="row">
           <div class="col-6">
             <div class="float-left">
-            <div class="dropdown">              
-              <button class="btn btn-primary btn-lg dropdown-toggle my-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Codice
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#codeModal" id="revealCodeButton" style:"display:none">Mostra il codice</a>
-                <a class="dropdown-item" href="#" onclick="generateCode()">Genera un nuovo codice</a>
+              
+              <div class="dropdown">              
+                <button class="btn btn-primary btn-lg dropdown-toggle my-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Genera Codice
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              
+                  <a class="dropdown-item" href="#" onclick="generateCode()">Genera un nuovo codice</a>
+                </div>
+              </div>
+            </div>
+            <div class="float-left">
+              <div class="dropdown">              
+                <div>
+                  &nbsp;
+                </div>  
+              </div>
+            </div>
+            <div id="showCodeButton" class="float-left" style="display:none">
+              <div>              
+                <button type="button" class="btn-lg btn-primary align-baseline float-right my-3" data-toggle="modal" data-target="#codeModal">
+                  Mostra il codice
+                </button>
+                  
+                </div>
               </div>
             </div>
           </div>
-        </div>
           <div class="col-6">
             <div class="float-right">
               <button class="btn btn-primary btn-lg my-3" type="button" id="fullScreenButton" onclick="toggleFullScreen()">
@@ -135,7 +152,7 @@
         </div>
       </div>
 
-<!-- Modal -->
+<!-- Modal New Game-->
 <div class="modal fade" id="newGameModal" tabindex="-1" role="dialog" aria-labelledby="newGameModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -155,13 +172,13 @@
   </div>
 </div>
 
-<!-- Modal -->
+<!-- Modal Screen-->
 <div class="modal fade" id="disableScreenLockModal" tabindex="-1" role="dialog" aria-labelledby="disableScreenLockModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="disableScreenLockModalLabel">Disabilitare il blocco schermo?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Chiudi">
         </button>
       </div>
       <div class="modal-body">
@@ -175,7 +192,7 @@
   </div>
 </div>
 
-<!-- Modal -->
+<!-- Modal Code-->
 <div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="codeModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">

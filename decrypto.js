@@ -23,6 +23,7 @@ function generateCode() {
 	Cookies.set("code", code);
 	setCode(code);
 	$('#codeModal').modal('show');
+	$('#showCodeButton').show();
 }
 
 function setCode(code) {
@@ -30,6 +31,7 @@ function setCode(code) {
 		$('#code' + idx).text(code[idx]);
 	}
 	$('#revealCodeButton').show();
+	// $('#showCode').show();
 }
 
 function setWords(words) {
@@ -56,6 +58,7 @@ function newGame() {
 	Cookies.set("words", words);
 	Cookies.remove("code");
 	$('#revealCodeButton').hide();
+	$('#showCodeButton').hide();
 	return words;
 }
 
