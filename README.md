@@ -1,6 +1,6 @@
 # Decrypto
 
-https://clodio.github.io/decrypto/
+https://nilomb.github.io/decrypto-italiano/
 
 ## Decrypto - How To Play
 
