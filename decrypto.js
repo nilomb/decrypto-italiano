@@ -22,13 +22,17 @@ function generateCode() {
 	var code = _.sample([1,2,3,4], 3);
 	Cookies.set("code", code);
 	setCode(code);
-	$('#codeModal').modal('show');
+	// $('#codeModal').modal('show');
 	$('#showCodeButton').show();
 }
 
 function setCode(code) {
 	for(idx = 0; idx < 3; idx++) {
-		$('#code' + idx).text(code[idx]);
+		// $('#code' + idx).text(code[idx]);
+		var imgName = "/assets/img/"+(code[idx])+".png";
+		console.log(imgName);
+		$('#code' + idx).html('<img src='+imgName+' alt="Cifra" height=100px" >');		
+
 	}
 	$('#revealCodeButton').show();
 	// $('#showCode').show();
