@@ -30,8 +30,7 @@ function setCode(code) {
 	for(idx = 0; idx < 3; idx++) {
 		// $('#code' + idx).text(code[idx]);
 		var imgName = "/assets/img/"+(code[idx])+".png";
-		console.log(imgName);
-		$('#code' + idx).html('<img src='+imgName+' alt="Cifra" height=100px" >');		
+		$('#code' + idx).html('<img src='+imgName+' height=100px" >');		
 
 	}
 	$('#revealCodeButton').show();

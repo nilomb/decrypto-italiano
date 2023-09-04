@@ -33,13 +33,13 @@ html {
   align-self: center;
 }
 
-.modal-content,
+/* .modal-content,
 .modal-header,
 .modal-footer,
 .codebody {
   background-color: rgb(89, 28, 28);
   border: none;
-}
+} */
 
 .card {
   border: none;
