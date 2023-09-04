@@ -36,8 +36,8 @@
     <div class="container-fluid my-5">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-8">
-            <p><h3 style="color:lightblue">Decrypto-Italiano</h3></p>
+          <div class="col-8 bg-info">
+            <p><h3>Decrypto-Italiano</h3></p>
           </div>
           <div class="col-4">
             <button type="button" class="btn-lg btn-primary align-baseline float-right my-3" data-toggle="modal" data-target="#newGameModal">
@@ -157,7 +157,7 @@
         </div>
       </div>
 
-<!-- New Game Modal -->
+<!-- Modal New Game-->
 <div class="modal fade" id="newGameModal" tabindex="-1" role="dialog" aria-labelledby="newGameModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -177,7 +177,7 @@
   </div>
 </div>
 
-<!-- Screen Modal-->
+<!-- Modal Screen-->
 <div class="modal fade" id="disableScreenLockModal" tabindex="-1" role="dialog" aria-labelledby="disableScreenLockModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -197,12 +197,12 @@
   </div>
 </div>
 
-<!-- Code Modal -->
+<!-- Modal Code-->
 <div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="codeModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title bg-transparent" id="codeModalLongTitle">Codice</h5>
+        <h5 class="modal-title" id="codeModalLongTitle">Codice</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -210,44 +210,26 @@
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
-            <div>
+            <div class="col-4">
               <div class="card">
                 <div class="body">
-                  <div class="codebody" id="code0">
+                  <div class="codebody bg-info" id="code0">
                   </div>
                 </div>                
               </div>
             </div>            
-            <div>
+            <div class="col-4">
               <div class="card">
                 <div class="body">
-                  <div class="codebody">
-                    <img src="/assets/img/dot.png" height="100px">
-                  </div>
-                </div>                
-              </div>
-            </div>  
-             <div>
-              <div class="card">
-                <div class="body">
-                  <div class="codebody" id="code1">
+                  <div class="codebody bg-info" id="code1">
                   </div>
                 </div>
               </div>
             </div>
-            <div>
+            <div class="col-4">
               <div class="card">
                 <div class="body">
-                  <div class="codebody">
-                    <img src="/assets/img/dot.png" height="100px">
-                  </div>
-                </div>                
-              </div>
-            </div> 
-            <div>
-              <div class="card">
-                <div class="body">
-                  <div class="codebody" id="code2">
+                  <div class="codebody bg-info" id="code2">
                   </div>
                 </div>
               </div>
