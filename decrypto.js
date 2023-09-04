@@ -29,7 +29,7 @@ function generateCode() {
 function setCode(code) {
 	for(idx = 0; idx < 3; idx++) {
 		// $('#code' + idx).text(code[idx]);
-		var imgName = "/assets/img/"+(code[idx])+".png";
+		var imgName = "./assets/img/"+(code[idx])+".png";
 		$('#code' + idx).html('<img src='+imgName+' height=100px" >');		
 
 	}
